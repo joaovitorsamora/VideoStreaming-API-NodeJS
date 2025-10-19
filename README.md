@@ -95,8 +95,3 @@ O **Backend ClipStream** é uma API desenvolvida em Node.js para gerenciamento d
 
 Sinta-se à vontade para abrir issues ou pull requests para melhorias!
 
----
-
-## 📝 Licença
-
-Este projeto está sob a licença ISC.

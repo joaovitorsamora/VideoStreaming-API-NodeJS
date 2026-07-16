@@ -1,11 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-const routes = require('../router');
+const routes = require('../src/router');
 const bodyParser = require('body-parser');
 
 require('dotenv/config');
 require('pg');
-require('../database');
+require('../src/database');
 
 const app = express();
 

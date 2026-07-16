@@ -1,11 +1,14 @@
-const Sequelize = require('sequelize')
-const dbConfig = require('../config/database')
-const Video = require('../models/Video')
-const Artigo = require('../models/Artigo')
+const Sequelize = require('sequelize');
+const dbConfig = require('../config/database');
 
-const connection = new Sequelize(dbConfig)
+const Video = require('../models/Video');
+const Artigo = require('../models/Artigo');
+
+const connection = process.env.DATABASE_URL
+  ? new Sequelize(process.env.DATABASE_URL, dbConfig)
+  : new Sequelize(dbConfig);
 
 Video.init(connection);
-Artigo.init(connection)
+Artigo.init(connection);
 
-module.exports = connection
+module.exports = connection;

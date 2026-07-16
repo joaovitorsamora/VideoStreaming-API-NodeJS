@@ -2,15 +2,15 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "src/api/index.js",
   "engines": {
     "node": "22.x"
   },
   "scripts": {
-    "start": "node ./src/api/index.js",
-    "dev": "nodemon ./src/api/index.js",
+    "start": "node src/api/index.js",
+    "dev": "nodemon src/api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && echo 'Build completed'"
+    "build": "echo \"Build completed\""
   },
   "keywords": [],
   "author": "",
